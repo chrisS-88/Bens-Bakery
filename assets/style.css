@@ -1,8 +1,8 @@
 :root {
   /* fonts */
   font-size: 18px;
-  --title: 75px;
-  --sub-title: 38px;
+  --title: 6rem;
+  --sub-title: 30px;
   --nav: 24px;
 
   /* colours */
@@ -32,13 +32,15 @@
   }
 
   .navbar:hover {
-    width: 20rem;
+    width: 18rem;
   }
 
   .navbar:hover .link-text {
     display: block;
   }
 }
+
+/* mid screen */
 
 /* small screen */
 @media only screen and (max-width: 600px) {
@@ -76,10 +78,11 @@
 
   .about-container .about-bottom {
     flex-direction: column;
+    height: calc(40vh - 5rem);
   }
 
   .about-container .about-bottom h1 {
-    font-size: var(--sub-title);
+    font-size: 2rem;
   }
 }
 
@@ -215,7 +218,7 @@ main {
 /* about */
 .about-top {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   background: url("/assets/images/bg.png");
   background-position: center;
   background-size: cover;
@@ -226,23 +229,24 @@ main {
 }
 
 .logo-img {
-  height: 100px;
+  height: 5rem;
+  padding: 0.5rem;
   border-radius: 50%;
 }
 
 .about-bottom {
   width: 100%;
-  height: 30vh;
+  height: 20vh;
   background-color: var(--lightBlue);
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .about-bottom h1 {
   margin: 0;
-  padding: 0;
-  font-size: var(--title);
+  padding-bottom: 1rem;
+  font-size: 3rem;
   letter-spacing: 4px;
   color: var(--white);
   font-family: "Qwitcher Grypen", cursive;
