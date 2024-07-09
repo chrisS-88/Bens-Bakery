@@ -3,28 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="assets/style.css" />
     <title>Ben's Bakery Treats</title>
   </head>
   <body>
     <nav class="navbar">
       <ul class="navbar-list">
-        <li class="logo">
-          <a href="#" class="nav-link">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              fill="currentColor"
-            >
-              <path
-                d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"
-              />
-            </svg>
-            <span class="link-text logo text">Ben's Bakery Treats</span>
-          </a>
+        <li class="logo nav-item">
+          <span class="logo-text">Ben's Treats</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            fill="currentColor"
+          >
+            <path
+              d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"
+            />
+          </svg>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="#about" class="nav-link">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -34,11 +41,11 @@
                 d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"
               />
             </svg>
-            <span class="link-text">About Me</span>
+            <span class="link-text">About</span>
           </a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="#cakes" class="nav-link">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
@@ -48,11 +55,11 @@
                 d="M86.4 5.5L61.8 47.6C58 54.1 56 61.6 56 69.2V72c0 22.1 17.9 40 40 40s40-17.9 40-40V69.2c0-7.6-2-15-5.8-21.6L105.6 5.5C103.6 2.1 100 0 96 0s-7.6 2.1-9.6 5.5zm128 0L189.8 47.6c-3.8 6.5-5.8 14-5.8 21.6V72c0 22.1 17.9 40 40 40s40-17.9 40-40V69.2c0-7.6-2-15-5.8-21.6L233.6 5.5C231.6 2.1 228 0 224 0s-7.6 2.1-9.6 5.5zM317.8 47.6c-3.8 6.5-5.8 14-5.8 21.6V72c0 22.1 17.9 40 40 40s40-17.9 40-40V69.2c0-7.6-2-15-5.8-21.6L361.6 5.5C359.6 2.1 356 0 352 0s-7.6 2.1-9.6 5.5L317.8 47.6zM128 176c0-17.7-14.3-32-32-32s-32 14.3-32 32v48c-35.3 0-64 28.7-64 64v71c8.3 5.2 18.1 9 28.8 9c13.5 0 27.2-6.1 38.4-13.4c5.4-3.5 9.9-7.1 13-9.7c1.5-1.3 2.7-2.4 3.5-3.1c.4-.4 .7-.6 .8-.8l.1-.1 0 0 0 0s0 0 0 0s0 0 0 0c3.1-3.2 7.4-4.9 11.9-4.8s8.6 2.1 11.6 5.4l0 0 0 0 .1 .1c.1 .1 .4 .4 .7 .7c.7 .7 1.7 1.7 3.1 3c2.8 2.6 6.8 6.1 11.8 9.5c10.2 7.1 23 13.1 36.3 13.1s26.1-6 36.3-13.1c5-3.5 9-6.9 11.8-9.5c1.4-1.3 2.4-2.3 3.1-3c.3-.3 .6-.6 .7-.7l.1-.1c3-3.5 7.4-5.4 12-5.4s9 2 12 5.4l.1 .1c.1 .1 .4 .4 .7 .7c.7 .7 1.7 1.7 3.1 3c2.8 2.6 6.8 6.1 11.8 9.5c10.2 7.1 23 13.1 36.3 13.1s26.1-6 36.3-13.1c5-3.5 9-6.9 11.8-9.5c1.4-1.3 2.4-2.3 3.1-3c.3-.3 .6-.6 .7-.7l.1-.1c2.9-3.4 7.1-5.3 11.6-5.4s8.7 1.6 11.9 4.8l0 0 0 0 0 0 .1 .1c.2 .2 .4 .4 .8 .8c.8 .7 1.9 1.8 3.5 3.1c3.1 2.6 7.5 6.2 13 9.7c11.2 7.3 24.9 13.4 38.4 13.4c10.7 0 20.5-3.9 28.8-9V288c0-35.3-28.7-64-64-64V176c0-17.7-14.3-32-32-32s-32 14.3-32 32v48H256V176c0-17.7-14.3-32-32-32s-32 14.3-32 32v48H128V176zM448 394.6c-8.5 3.3-18.2 5.4-28.8 5.4c-22.5 0-42.4-9.9-55.8-18.6c-4.1-2.7-7.8-5.4-10.9-7.8c-2.8 2.4-6.1 5-9.8 7.5C329.8 390 310.6 400 288 400s-41.8-10-54.6-18.9c-3.5-2.4-6.7-4.9-9.4-7.2c-2.7 2.3-5.9 4.7-9.4 7.2C201.8 390 182.6 400 160 400s-41.8-10-54.6-18.9c-3.7-2.6-7-5.2-9.8-7.5c-3.1 2.4-6.8 5.1-10.9 7.8C71.2 390.1 51.3 400 28.8 400c-10.6 0-20.3-2.2-28.8-5.4V480c0 17.7 14.3 32 32 32H416c17.7 0 32-14.3 32-32V394.6z"
               />
             </svg>
-            <span class="link-text">My Cakes</span>
+            <span class="link-text">Cakes</span>
           </a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="#pricing" class="nav-link">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -66,7 +73,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="#contact" class="nav-link">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -83,67 +90,18 @@
     </nav>
 
     <main>
-      <h1>bens bakery treats</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, tempore
-        necessitatibus ea quisquam placeat vel! Aut ratione ducimus tenetur, dolor odit
-        molestias, id possimus iusto doloribus doloremque veniam fugiat, corrupti vitae!
-        Repellat sequi quis labore odit rerum placeat eum et corrupti ullam sed
-        repellendus consequuntur voluptatibus necessitatibus maxime, alias ratione odio
-        vero tempora! Odio adipisci autem officiis vel eligendi dignissimos, alias,
-        impedit voluptate eius amet necessitatibus minus consequatur accusamus harum
-        doloribus maiores quasi! Sunt voluptatum nisi optio similique suscipit. Similique
-        aliquam vel repellat culpa nihil harum corrupti numquam fugit, quod eaque illum
-        dolore accusamus magni at molestias excepturi quas quo odio aliquid expedita quae.
-        At alias exercitationem, deserunt repellat dolores, harum ut quaerat et est amet
-        asperiores magni labore ducimus suscipit totam! Aliquam consequatur adipisci
-        consequuntur nemo quia aut quas vitae qui esse, debitis impedit nostrum, deserunt
-        quam, eius aspernatur laudantium et reiciendis accusamus dolorum praesentium
-        commodi molestiae veritatis officiis nulla! Velit illum rerum itaque? Tempora
-        eveniet quae recusandae eos accusantium repudiandae sunt illum enim delectus
-        libero. Nam aut veniam numquam quisquam deleniti voluptates impedit ex. Eveniet
-        voluptatum, harum quo at perferendis numquam perspiciatis consequuntur hic quis
-        nemo aut, magni minus libero. Recusandae culpa ipsam repellendus vitae totam
-        consequatur nam voluptates deleniti, numquam incidunt magnam? Laboriosam dolorum
-        voluptas odit optio nemo quidem soluta! Consectetur quasi repellat, itaque fuga ea
-        incidunt architecto! Quod voluptatibus quasi eum, doloribus adipisci sit qui!
-        Eaque, culpa delectus eos, aperiam totam perspiciatis dignissimos quasi modi quod
-        ipsa alias molestiae optio nemo fuga tenetur ipsam asperiores nulla nesciunt! Ea,
-        assumenda. Consectetur, beatae tenetur expedita vitae nesciunt hic nisi quae non?
-        Beatae qui incidunt, cupiditate praesentium numquam eius dolores delectus sed
-        doloribus nesciunt velit. Exercitationem aperiam repellat tenetur fugiat ut
-        debitis quasi et laboriosam, minus quis, adipisci quae neque dolor magnam nesciunt
-        corporis perspiciatis commodi accusantium magni, repellendus suscipit pariatur
-        rem! Velit, soluta itaque dolore dicta natus laborum tenetur minus explicabo
-        laboriosam fuga voluptatibus! Illo quo sit vero ex unde ducimus itaque earum
-        aperiam aspernatur, ipsa deleniti facilis voluptatibus molestias laborum assumenda
-        nobis. Ducimus nesciunt repellendus laboriosam mollitia libero reiciendis
-        praesentium culpa accusantium laborum enim. Vero necessitatibus delectus facilis,
-        asperiores, similique fugiat dicta modi vitae placeat labore sapiente aut atque.
-        Consequatur amet magnam repudiandae ea explicabo, aspernatur saepe? Tempore
-        exercitationem voluptatum mollitia explicabo atque illo quae quaerat error non ad,
-        quia repellendus distinctio autem aut quis illum inventore quod. Modi quae
-        officiis repudiandae libero illo nemo optio facilis! Quibusdam, tenetur deleniti
-        qui nam, voluptatibus, dolores ex ea omnis reiciendis perspiciatis facilis
-        accusamus at repellendus temporibus provident! Amet voluptate a eum voluptatum non
-        omnis iusto id nihil quisquam rem ea tenetur deserunt quas dolore accusamus quod
-        nulla natus, perspiciatis aspernatur ut quis impedit! Nostrum beatae, officiis,
-        autem commodi error vitae cum velit debitis, est dignissimos vero qui aliquam
-        ipsam. Doloribus, ullam, minus suscipit maxime illum ducimus minima quod sit
-        beatae consequatur excepturi facere quasi nobis quo culpa voluptatibus eius
-        reprehenderit magnam voluptatem deserunt quas nihil itaque! Blanditiis modi
-        assumenda veniam asperiores optio possimus explicabo nulla architecto consequuntur
-        libero, illum odit unde ab. Eaque, harum sint minima rem dolores laudantium eius
-        non optio distinctio ab reiciendis. Inventore laboriosam aspernatur delectus vel
-        excepturi nihil dolores sit nulla est, maiores repellendus ullam assumenda dolorum
-        praesentium quaerat. Rem harum inventore hic ut. Cupiditate quaerat quae,
-        consequatur minus suscipit enim nulla autem vero cum, temporibus earum aperiam
-        ducimus possimus facere. Magnam explicabo officia modi illum, fuga tempora
-        mollitia. Consequatur eveniet mollitia nostrum labore sed quae error alias neque
-        vero doloremque, corporis illo sint, velit ducimus modi dicta quia, voluptatem
-        accusantium commodi dolorem. Id molestias odit quisquam? Ab vero dolore id
-        quisquam culpa aliquid reprehenderit!
-      </p>
+      <section class="page" id="about">
+        <div class="about-container">
+          <div class="about-top"></div>
+          <div class="about-bottom">
+            <h1>Ben's Bakery Treats</h1>
+            <img class="logo-img" src="/assets/images/logo.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="page" id="cakes">cakes</section>
+      <section class="page" id="pricing">pricing</section>
+      <section class="page" id="contact">contact</section>
     </main>
   </body>
 </html>
