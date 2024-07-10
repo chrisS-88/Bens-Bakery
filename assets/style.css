@@ -215,6 +215,17 @@ main {
   scroll-snap-align: center;
 }
 
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h1 {
+  font-size: var(--title);
+}
+
 /* about */
 .about-top {
   width: 100%;
